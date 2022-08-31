@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/37007fa821.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="./images/twt.ico" />
+    <title>Twitter's Clone</title>
+  </head>
+  <body>
+    <!-- main containter nesting all the sections of the website -->
+    <div class="main-container">
+      <!-- The first section of the websites where the menu's are -->
+      <div class="menu">
+        <i class="fa-brands fa-twitter tweet"></i>
+        <div class="navs">
+          <i class="fa-solid fa-house"></i><a href="#">Home</a>
+        </div>
+        <div class="navs">
+          <i class="fa-solid fa-hashtag"></i><a href="#">Explore</a>
+        </div>
+        <div class="navs">
+          <i class="fa-solid fa-bell"></i><a href="#">Notifications</a>
+        </div>
+        <div class="navs">
+          <i class="fa-solid fa-envelope"></i><a href="#">Messages</a>
+        </div>
+        <div class="navs">
+          <i class="fa-solid fa-bookmark"></i><a href="#">Bookmarks</a>
+        </div>
+        <div class="navs">
+          <i class="fa-solid fa-list"></i><a href="#">Lists</a>
+        </div>
+        <div class="navs">
+          <i class="fa-solid fa-user"></i><a href="#">Profile</a>
+        </div>
+        <div class="navs">
+          <i class="fa-solid fa-ellipsis"></i><a href="#">More</a>
+        </div>
+        <button>Tweet</button>
+
+        <!-- Profile section, just below the navs -->
+        <div class="profile">
+          <!-- profile picture -->
+          <div class="profile-pic">
+            <img src="./Images/profile pic.jpg" alt="Profile Picture" />
+          </div>
+          <!-- profile details -->
+          <div class="details">
+            <p class="name">Abdullah Ayoola</p>
+            <p class="username">@officialayo540</p>
+          </div>
+          <!-- elipsis -->
+          <div class="elipsis">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- The mid section of the website -->
+      <div class="main">
+        <div class="message-container">
+          <!-- The section where the home text is and the star icon -->
+          <div class="homepage">
+            <p>Home</p>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <!-- The section where the users type in their inputs to be posted -->
+          <div class="message-update">
+            <div class="home-pic">
+              <img src="./images/profile pic.jpg" alt="profile picture" />
+            </div>
+            <textarea
+              name="text"
+              placeholder="What's happening?"
+              maxlength="300"
+            ></textarea>
+          </div>
+          <!-- Icons section and tweet button to send message live -->
+          <div class="send-message">
+            <div class="icons">
+              <!-- couldn't find a gallery icon replaced with this -->
+              <i class="fa-solid fa-photo-film"></i>
+              <!-- couldn't find a gif icon, repleased with this -->
+              <i class="fa-solid fa-file-video"></i>
+              <i class="fa-solid fa-square-poll-horizontal"></i>
+              <i class="fa-solid fa-face-meh"></i>
+              <!-- couldn't find the schedule icon replaced with this -->
+              <i class="fa-solid fa-calendar-check"></i>
+              <i class="fa-solid fa-location-pin"></i>
+            </div>
+
+            <!-- Tweet button section -->
+            <div class="send-button">
+              <button class="button">Tweet</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- next container premier league -->
+        <div class="message1">
+          <div id="second-container">
+            <div class="message-pic">
+              <img
+                src="./Images/premier league.jpg"
+                alt="Premier league Image"
+              />
+            </div>
+            <!-- message heading -->
+            <div class="message-heading">
+              <div class="message-content">
+                <p class="first-p">Premier League</p>
+                <!-- checkmark -->
+                <i class="fa-solid fa-check"></i>
+                <!-- certificate icon -->
+                <i class="fa-solid fa-certificate"></i>
+                <p class="pl">@premierleague -</p>
+                <p class="time">9h</p>
+              </div>
+              <!-- main message -->
+              <div class="main-message">
+                <p>
+                  Who has the best player in the <span>#PL</span> so far? 🤔
+                </p>
+              </div>
+            </div>
+            <!-- elipsis -->
+            <div class="options">
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+          <!-- retweeting options -->
+          <div class="retweet">
+            <div class="tweeting-options">
+              <!-- comment box -->
+              <i class="fa-solid fa-comment"></i>
+              <p>4,680</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- retweet -->
+              <i class="fa-solid fa-retweet"></i>
+              <p>1,425</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- heart -->
+              <i class="fa-solid fa-heart red"></i>
+              <p>21.9K</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- upload -->
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- next container chelsea fc -->
+        <div class="message1">
+          <div id="second-container">
+            <div class="message-pic">
+              <img
+                src="./Images/chelsea profile pic.jpg"
+                alt="Chelsea Profile Picture"
+              />
+            </div>
+            <!-- message heading -->
+            <div class="message-heading">
+              <div class="message-content">
+                <p class="first-p">Chelsea FC</p>
+                <!-- checkmark -->
+                <i class="fa-solid fa-check"></i>
+                <!-- certificate icon -->
+                <i class="fa-solid fa-certificate"></i>
+                <p class="pl">@ChelseaFC -</p>
+                <p class="time">9h</p>
+              </div>
+              <!-- main message -->
+              <div class="main-message">
+                <p>He's won it all. 🏆</p>
+              </div>
+            </div>
+            <!-- elipsis -->
+            <div class="options" id="options">
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+
+          <!-- Image section -->
+          <div class="trophy">
+            <img src="./images/chelseafc.jpg" alt="Chelsea FC" />
+          </div>
+
+          <!-- retweeting options -->
+          <div class="retweet">
+            <div class="tweeting-options">
+              <!-- comment box -->
+              <i class="fa-solid fa-comment"></i>
+              <p>4,680</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- retweet -->
+              <i class="fa-solid fa-retweet"></i>
+              <p>1,425</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- heart -->
+              <i class="fa-solid fa-heart red"></i>
+              <p>21.9K</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- upload -->
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- next container chelsea fc wesley fofana -->
+        <div class="message1">
+          <div id="second-container">
+            <div class="message-pic">
+              <img
+                src="./Images/chelsea profile pic.jpg"
+                alt="Chelsea Profile Picture"
+              />
+            </div>
+            <!-- message heading -->
+            <div class="message-heading">
+              <div class="message-content">
+                <p class="first-p">Chelsea FC</p>
+                <!-- checkmark -->
+                <i class="fa-solid fa-check"></i>
+                <!-- certificate icon -->
+                <i class="fa-solid fa-certificate"></i>
+                <p class="pl">@ChelseaFC -</p>
+                <p class="time">9h</p>
+              </div>
+              <!-- main message -->
+              <div class="main-message">
+                <p>He's won it all. 🏆</p>
+              </div>
+              <div class="hashtag">
+                <p><span>#FofanalsChelsea</span></p>
+              </div>
+            </div>
+            <!-- elipsis -->
+            <div class="options" id="options">
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+
+          <!-- Image section -->
+          <div class="trophy">
+            <img src="./images/fofana.jpg" alt="Wesley Fofana" />
+          </div>
+
+          <!-- retweeting options -->
+          <div class="retweet">
+            <div class="tweeting-options">
+              <!-- comment box -->
+              <i class="fa-solid fa-comment"></i>
+              <p>4,680</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- retweet -->
+              <i class="fa-solid fa-retweet"></i>
+              <p>1,425</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- heart -->
+              <i class="fa-solid fa-heart red"></i>
+              <p>21.9K</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- upload -->
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- next container eyowo -->
+        <div class="message1">
+          <div id="second-container">
+            <div class="message-pic">
+              <img src="./Images/eyowoimg.jpg" alt="Eyowo Profile Picture" />
+            </div>
+            <!-- message heading -->
+            <div class="message-heading">
+              <div class="message-content">
+                <p class="first-p">Eyowo</p>
+                <!-- checkmark -->
+                <i class="fa-solid fa-check"></i>
+                <!-- certificate icon -->
+                <i class="fa-solid fa-certificate"></i>
+                <p class="pl">@eyowo -</p>
+                <p class="time">9h</p>
+              </div>
+              <!-- main message -->
+              <div class="main-message">
+                <p>The safest card is here! 🚀</p>
+              </div>
+              <div class="hashtag">
+                <p>
+                  Introducing <span>#TheBetterCard</span> - no card number, no
+                  expiry date.
+                </p>
+                <p>
+                  <span>#Nothingtosee</span>. Designed with safety thought and
+                  intention, just for you.
+                </p>
+                <p>In partnership with <span>@MastercardMEA</span>. 💖</p>
+              </div>
+            </div>
+            <!-- elipsis -->
+            <div class="options eyowo">
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+
+          <!-- Image section -->
+          <div class="trophy">
+            <!-- <img src="./images/chelseafc.jpg" alt="Chelsea FC" /> -->
+            <video src="./videos/eyowo.mp4" controls></video>
+          </div>
+
+          <!-- retweeting options -->
+          <div class="retweet">
+            <div class="tweeting-options">
+              <!-- comment box -->
+              <i class="fa-solid fa-comment"></i>
+              <p>146</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- retweet -->
+              <i class="fa-solid fa-retweet"></i>
+              <p>338</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- heart -->
+              <i class="fa-solid fa-heart red"></i>
+              <p>3,049</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- upload -->
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+          </div>
+          <div class="sponsored">
+            <div class="i-cont">
+              <i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <p>Promoted</p>
+          </div>
+        </div>
+
+        <!-- next container premier league match day -->
+        <div class="message1">
+          <div id="second-container">
+            <div class="message-pic">
+              <img
+                src="./Images/premier league.jpg"
+                alt="Premier League Profile Picture"
+              />
+            </div>
+            <!-- message heading -->
+            <div class="message-heading">
+              <div class="message-content">
+                <p class="first-p">Premier League</p>
+                <!-- checkmark -->
+                <i class="fa-solid fa-check"></i>
+                <!-- certificate icon -->
+                <i class="fa-solid fa-certificate"></i>
+                <p class="pl">@premierleague -</p>
+                <p class="time">15h</p>
+              </div>
+              <!-- main message -->
+              <div class="main-message">
+                <p>Which team impressed you the most this evening? 🤩</p>
+              </div>
+            </div>
+            <!-- elipsis -->
+            <div class="options matchday">
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+
+          <!-- Image section -->
+          <div class="trophy">
+            <img src="./images/team day 30.jpg" alt="Matchweek 5 Aug 30" />
+          </div>
+
+          <!-- retweeting options -->
+          <div class="retweet">
+            <div class="tweeting-options">
+              <!-- comment box -->
+              <i class="fa-solid fa-comment"></i>
+              <p>1,281</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- retweet -->
+              <i class="fa-solid fa-retweet"></i>
+              <p>1,721</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- heart -->
+              <i class="fa-solid fa-heart red"></i>
+              <p>30.7K</p>
+            </div>
+
+            <div class="tweeting-options">
+              <!-- upload -->
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- feeds section -->
+      <div class="feeds">
+        <form action="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search Twitter" />
+        </form>
+        <!-- Trends -->
+        <div class="trends">
+          <div class="foryou">
+            <h2>Trends for you</h2>
+          </div>
+          <!-- first sectioni -->
+          <div class="trending-container">
+            <div class="trending">
+              <p>Trending in Nigeria</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="pops">
+              <p>Waspapping</p>
+            </div>
+            <div class="trends-tweet">
+              <p>4,267 Tweets</p>
+            </div>
+          </div>
+
+          <!-- second section -->
+          <div class="trending-container">
+            <div class="trending">
+              <p>Sports - Trending</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="pops">
+              <p>#UCLdraw</p>
+            </div>
+            <div class="trends-tweet">
+              <p>7,264 Tweets</p>
+            </div>
+          </div>
+
+          <!-- third section -->
+          <div class="trending-container">
+            <div class="trending">
+              <p>Careers - Trending</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="pops">
+              <p>#ASUU</p>
+            </div>
+            <div class="trends-tweet">
+              <p>8,126 Tweets</p>
+            </div>
+          </div>
+
+          <!-- fourth section -->
+          <div class="trending-container">
+            <div class="trending">
+              <p>Sports - Trending</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="pops">
+              <p>Machester City</p>
+            </div>
+            <div class="trends-tweet">
+              <p>31K Tweets</p>
+            </div>
+          </div>
+
+          <!-- fifth section -->
+          <div class="trending-container">
+            <div class="trending">
+              <p>Trending in Nigeria</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="pops">
+              <p>Anthony Gordon</p>
+            </div>
+            <div class="trends-tweet">
+              <p>15.7K Tweets</p>
+            </div>
+          </div>
+
+          <!-- sixth section -->
+          <div class="trending-container">
+            <div class="trending">
+              <p>Trending in Nigeria</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="pops">
+              <p>Kabiru Sokoto</p>
+            </div>
+            <div class="trends-tweet">
+              <p>2,936 Tweets</p>
+            </div>
+          </div>
+
+          <!-- seventh section -->
+          <div class="trending-container">
+            <div class="trending">
+              <p>Trending in Nigeria</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="pops">
+              <p>#olosho</p>
+            </div>
+            <div class="trends-tweet">
+              <p>8,011 Tweets</p>
+            </div>
+          </div>
+
+          <!-- Eight section -->
+          <div class="trending-container">
+            <div class="trending">
+              <p>Sports - Trending</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="pops">
+              <p>Mason Mount</p>
+            </div>
+            <div class="trends-tweet">
+              <p>2,852 Tweets</p>
+            </div>
+          </div>
+
+          <!-- Nineth section -->
+          <div class="trending-container">
+            <div class="trending">
+              <p>Sports - Trending</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="pops">
+              <p>Crisitiano Ronaldo</p>
+            </div>
+            <div class="trends-tweet">
+              <p>35.8K Tweets</p>
+            </div>
+          </div>
+
+          <!-- Tenth section -->
+          <div class="trending-container">
+            <div class="trending">
+              <p>Sports - Trending</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="pops">
+              <p>Scott Parker</p>
+            </div>
+            <div class="trends-tweet">
+              <p>21.3K Tweets</p>
+            </div>
+          </div>
+
+          <!-- show more -->
+          <div class="show-more trending-container">
+            <a href="#">Show more</a>
+          </div>
+        </div>
+
+        <!-- who to follow section -->
+        <div class="follow">
+          <div class="follow-me">
+            <h2>Who to follow</h2>
+          </div>
+          <div class="follow-container">
+            <div id="pfp-follow">
+              <img src="./Images/poor rich  man.jpg" alt="profile picture" />
+            </div>
+            <!-- promoted div container -->
+            <div>
+              <div id="account">
+                <p class="first-name">Poor man rich Produc...</p>
+                <p class="second-name">@PoorrichmanPro1</p>
+              </div>
+              <!-- promoted section -->
+              <!-- icon here -->
+              <div class="sponsored sponsored2">
+                <div class="i-cont">
+                  <i class="fa-solid fa-arrow-up"></i>
+                </div>
+                <p>Promoted</p>
+              </div>
+            </div>
+            <div class="follow-btn">
+              <button class="btn-follow">Follow</button>
+            </div>
+          </div>
+
+          <!-- second container -->
+          <div class="follow-container">
+            <div id="pfp-follow">
+              <img
+                src="./Images/fantasy premier league.png"
+                alt="profile picture"
+              />
+            </div>
+            <!-- promoted div container -->
+            <div class="promotedonly1">
+              <div id="account">
+                <p class="first-name">Fantasy Premier L...</p>
+                <p class="second-name">@OfficialFPL</p>
+              </div>
+            </div>
+            <div class="follow-btn">
+              <button class="btn-follow">Follow</button>
+            </div>
+          </div>
+
+          <!-- third container -->
+          <div class="follow-container">
+            <div id="pfp-follow">
+              <img src="./Images/liverpoolFC.jpg" alt="profile picture" />
+            </div>
+            <!-- promoted div container -->
+            <div class="promotedonly2">
+              <div id="account">
+                <p class="first-name">Liverpool FC</p>
+                <p class="second-name">@LFC</p>
+              </div>
+            </div>
+            <div class="follow-btn">
+              <button class="btn-follow">Follow</button>
+            </div>
+          </div>
+          <!-- show more section -->
+          <div class="show-more trending-container">
+            <a href="#">Show more</a>
+          </div>
+        </div>
+
+        <!-- terms of service section -->
+        <div class="terms-cont">
+          <div class="link-cont">
+            <a href="#">Terms of Service</a>
+            <a href="#" class="pp">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+          <div class="link-cont">
+            <a href="#">Accessibility</a>
+            <a href="#" class="pp">Ads info</a>
+            <a href="#">More ...</a>
+          </div>
+          <div class="copyright">
+            <p>&copy 2022 Twitter, INC.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
