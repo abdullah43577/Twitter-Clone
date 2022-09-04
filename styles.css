@@ -16,28 +16,34 @@ body {
 }
 
 .menu {
-  width: 20%;
   height: 100%;
-  /* new code  */
+  display: flex;
+  flex-direction: column;
+  /* This are flex properties, namely, flex-shrink, flex-grow, and flex-basis */
+  flex: 0 1 20%;
   position: fixed;
 }
 
 .main {
-  width: 50%;
   /* height: 100%; */
   border-left: 1px solid #657786;
   border-right: 1px solid #657786;
-  /* new code */
+  display: flex;
+  flex-direction: column;
+  /* This are flex properties, namely, flex-shrink, flex-grow, and flex-basis */
+  flex: 0 1 50%;
   position: relative;
-  left: 270px;
+  left: 250px;
 }
 
 .feeds {
-  width: 30%;
   height: 100%;
-  /* new code */
+  display: flex;
+  flex-direction: column;
+  /* This are flex properties, namely, flex-shrink, flex-grow, and flex-basis */
+  flex: 0 1 30%;
   position: relative;
-  left: 270px;
+  left: 250px;
 }
 
 .tweet {
@@ -85,11 +91,12 @@ button {
   font-weight: bold;
   cursor: pointer;
   border: none;
+  margin-top: 10px;
 }
 
 .profile {
   display: flex;
-  margin-top: 65px;
+  margin-top: 55px;
   justify-content: space-around;
   align-items: center;
 }
@@ -98,6 +105,10 @@ button {
   width: 40px;
   height: auto;
   border-radius: 50px;
+}
+
+.details {
+  padding: 0px 10px;
 }
 
 .name {
@@ -122,9 +133,6 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
-  /* this broke the website as well */
-  /* position: fixed;
-  z-index: 1; */
 }
 
 .homepage p,
@@ -350,6 +358,7 @@ span {
   border: none;
   background-color: #657786;
   padding-left: 40px;
+  margin-right: 10px;
 }
 
 ::placeholder {
@@ -448,11 +457,6 @@ span {
   transition: all ease-out 0.5s;
 }
 
-.btn-follow {
-  width: 10px;
-  padding: 0px;
-}
-
 #pfp-follow img {
   width: 40px;
   height: auto;
@@ -465,8 +469,9 @@ span {
   color: #14171a;
   font-weight: bold;
   cursor: pointer;
-  width: 100px;
+  width: 100%;
   height: 30px;
+  padding: 5px 20px;
 }
 
 #account {
